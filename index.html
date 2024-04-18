@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Emlak Buraya</title>
+  <!--bs-css--->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css"
+    integrity="sha512-b2QcS5SsA8tZodcDtGRELiGv5SaKSk1vDHDaQRda0htPYWZ6046lr3kJ5bAAQdpV2mmA/4v0wQF9MyU6/pDIAg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!--bs icons-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+  <!---css-->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!--navbar-->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary ">
+    <div class="container ">
+      <a class="navbar-brand" href="#">
+        <img src="img/logo.webp" alt="logo" class="w-150">
+      </a>
+      <button class="navbar-toggler fs-6 py-2 px-3 px-bolder" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg text-center">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#Home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#Kiralık">Kiralık</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#Satılık">Satılık</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#Projeler">Projeler</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link btn text-white bg-dark px-3 rounded-2 w-100" href="#popular">Bize Ulaşın</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<!--hero section-->
+<div id="carouselExampleAutoplaying" class="carousel slide ">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="img/home6.jpg" class="d-block w-100-height" alt="...">
+      <div class="carousel-caption carousel1">
+        <p>1/3</p>
+        <h5>Daha Kolay Keşfedin</h5>
+        <div class="mt-5 d-flex">
+          <input type="text" class="form-control search w-50 py-2">
+          <button class="btn btn-light btn-sm justify-content-md-end mx-2 px-2"><i class="bi bi-search"></i></button>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="img/home7.jpg" class="d-block w-100-height" alt="...">
+      <div class="carousel-caption carousel1">
+        <p>2/3</p>
+        <h5>GELECEK NESİLLER İÇİN</h5>
+        <P><a href="#" class="btn btn-light btn-lg mt-3">Daha Fazla</a></P>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="img/home8.jpg" class="d-block w-100-height" alt="...">
+      <div class="carousel-caption carousel1">
+        <p>3/3</p>
+        <h5>EMLAK ALIM SATIM REHBERİ</h5>
+        <P><a href="#" class="btn btn-light btn-lg mt-3">Daha Fazla</a>
+        </P>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+  <!--populer section-->
+  <section class="container" id="Popular" style="margin-top: 100px">
+      <div class="d-flex">
+      <h2>Rezidanslarımız</h2>
+      <h6 class="ms-auto">
+        Tümünü Keşfedin <span class="arrow-icon fs-3 fw-bolder">&rarr;</span>
+      </h6>
+    </div>
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 mt-2">
+      <div class="col">
+        <div class="card border-0 rounded-0">
+          <img src="img/home1.jpg" alt="image1" class="card-img-top rounded-0">
+          <div class="card-body">
+            <p class="card-text">İzmir,Türkiye</p>
+            <div class="d-flex justify-content-center mt-3">
+              <p class="mx-4 text-muted">
+                <i class="bi bi-car-front-fill"></i> car
+              </p>
+              <p class="mx-4 text-muted">
+                <i class="bi bi-play-fill"></i> 7 * 9
+              </p>
+              <p class="mx-4 text-muted">
+                <i class="bi bi-compass"></i> 1500m²
+              </p>
+            </div>
+            <div class="d-flex my-2">
+              <button class="btn btn-lg bg-dark text-white px-4">Rezervasyon Yap
+              </button>
+              <h5 class="my-auto ms-auto">$20.130,000</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card border-0 rounded-0">
+          <img src="img/home2.jpg" alt="image1" class="card-img-top rounded-0">
+          <div class="card-body">
+            <p class="card-text">İzmir,Türkiye</p>
+            <div class="d-flex justify-content-center mt-3">
+              <p class="mx-4 text-muted">
+                <i class="bi bi-car-front-fill"></i> car
+              </p>
+              <p class="mx-4 text-muted">
+                <i class="bi bi-play-fill"></i> 12 * 10
+              </p>
+              <p class="mx-4 text-muted">
+                <i class="bi bi-compass"></i> 2500m²
+              </p>
+            </div>
+            <div class="d-flex my-2">
+              <button class="btn btn-lg bg-dark text-white px-4">Rezervasyon Yap
+              </button>
+              <h5 class="my-auto ms-auto">$13.250,048</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card border-0 rounded-0">
+          <img src="img/home3.jpg" alt="image1" class="card-img-top rounded-0">
+          <div class="card-body">
+            <p class="card-text">İzmir,Türkiye</p>
+            <div class="d-flex justify-content-center mt-3">
+              <p class="mx-4 text-muted">
+                <i class="bi bi-car-front-fill"></i> car
+              </p>
+              <p class="mx-4 text-muted">
+                <i class="bi bi-play-fill"></i> 6 * 9
+              </p>
+              <p class="mx-4 text-muted">
+                <i class="bi bi-compass"></i> 1000m²
+              </p>
+            </div>
+            <div class="d-flex my-2">
+              <button class="btn btn-lg bg-dark text-white px-4">Rezervasyon Yap
+              </button>
+              <h5 class="my-auto ms-auto">$9.132,048</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--dark-->
+  <section class="bg-dark" style="margin-top: -150px;">
+    <div class="container pt-5">
+      <div class="row" style="margin-top: 25%;">
+        <div class="col-lg-4">
+          <h2 style="color: #b5b5b5;">Halil TURGUT</h2>
+          <p style="color: #b5b5b5">Satış Danışmanı</p>
+        </div>
+        <!--lh:line-height-->
+        <div class="col-lg-8">
+          <h6 class="lh-lg" style="color: #b5b5b5;">&ldquo;Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Accusantium atque reprehenderit, ut saepe quos est mollitia enim deserunt consectetur porro animi. Delectus
+            veritatis voluptatum, quis adipisci in totam ipsam unde accusamus voluptates quas tempora ea deserunt
+            debitis
+            quo reprehenderit dignissimos.
+            &ldquo;
+          </h6>
+        </div>
+      </div>
+      <hr class="text-light">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 col-sm-6">
+            <img src="img/logo1.png" alt="" class="w-75">
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <img src="img/logo2.png" alt="" class="w-75">
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <img src="img/logo3.png" alt="" class="w-75">
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <img src="img/logo4.png" alt="" class="w-75">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--our section-->
+  <section class="about section-padding" id="Services" style="margin-top: 40px;">
+    <div class="text-center pb-5">
+      <h2>Hizmetlerimiz</h2>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-5 col-md-12 col-12">
+          <div class="d-flex gap-2">
+            <div class="about-img">
+              <img src="img/about1.png" alt="" class="img-fluid h-100 mt-4">
+            </div>
+            <div class="about-img">
+              <img src="img/about2.png" alt="" class="img-fluid h-75">
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-7 col-md-12 col-12 ps-lg-5" style="margin-top: 40px;">
+          <div class="about-text">
+            <h2>Konfor Bizim Birinci Önceliğimizdir.</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi 
+              illum culpa ad, perferendis officia facilis, tempora voluptates 
+              veniam maxime quis quasi explicabo nisi vero repudiandae eum asperiores? 
+              Harum voluptatem ea exercitationem enim? Repudiandae tenetur, 
+              libero voluptatum voluptatibus
+              aut quos architecto consectetur cum harum 
+              fugiat blanditiis nemo, aliquid accusantium unde corporis.</p>
+              <a href="#" class="btn text-white bg-dark px-3">
+                Daha Fazlası İçin
+              </a>
+            </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--blog section-->
+  <section class="container" id="Blog" style="margin-top: 100px">
+      <div class="d-flex">
+      <h2>Güncel Konut Bilgileri</h2>
+      <button class="btn bg-dark text-white px-4 btn-md ms-auto">Tümünü Gör</button>
+    </div>
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 mt-2">
+      <div class="col">
+        <div class="card border-0 rounded-0 mx-1">
+          <img src="img/home-4.jpg" alt="">
+          <div class="card-body">
+            <p class="card-text card-muted">18 Nisan 2024</p>
+            <p class="card-text card-muted">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, tenetur.
+            </p>
+            <button class="btn text-primary px-4 btn-md fs-5" style="background: #d4e9ff;">Daha Fazla Oku</button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card border-0 rounded-0 mx-2">
+          <img src="img/home-6.jpg" alt="">
+          <div class="card-body">
+            <p class="card-text card-muted">17 Nisan 2024</p>
+            <p class="card-text card-muted">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, tenetur.
+            </p>
+            <button class="btn text-primary px-4 btn-md fs-5" style="background: #d4e9ff;">Daha Fazla Oku</button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card border-0 rounded-0 mx-1">
+          <img src="img/home-7.jpg" alt="">
+          <div class="card-body">
+            <p class="card-text card-muted">07 Mayıs 2024</p>
+            <p class="card-text card-muted">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, tenetur.
+            </p>
+            <button class="btn text-primary px-4 btn-md fs-5" style="background: #d4e9ff;">Daha Fazla Oku</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--review section-->
+  <section class="bg-dark" id="review" style="margin-top: 100px;">
+    <div class="container pt-5">
+      <div class="d-flex">
+        <h2 class="text-light">Müşterilerimiz Bizim Hakkımızda Ne Diyor?</h2>
+        <div class="ms-auto">
+          <button class="btn btn-md text-light">
+            <span class="arrow-icon mx-2">&larr;</span>
+          </button>
+          <button class="btn btn-md text-light">
+            <span class="arrow-icon mx-2">&rarr;</span>
+          </button>
+        </div>
+      </div>
+      <div class="container mx-auto row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 pb-5 mt-3">
+        <div class="card border-0 bg-transparent col-md-8">
+          <div class="row">
+            <div class="col-md-5">
+              <img src="img/team-1.png" alt="" class="img-fluid">
+            </div>
+            <div class="col-md-7">
+              <div class="card-body">
+                <h5 class="card-title text-white">Fazlı</h5>
+                <p class="card-text text-light ">
+                  This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer
+                </p>
+                <p class="card-text">
+                  <small class="text-light"> Lead Engineer</small>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card border-0 bg-transparent col-md-8">
+          <div class="row">
+            <div class="col-md-5">
+              <img src="img/team-2.png" alt="" class="img-fluid">
+            </div>
+            <div class="col-md-7">
+              <div class="card-body">
+                <h5 class="card-title text-white">Mahmut</h5>
+                <p class="card-text text-light">
+                  This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer
+                </p>
+                <p class="card-text">
+                  <small class="text-light"> Lead Engineer</small>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card border-0 bg-transparent col-md-8">
+          <div class="row">
+            <div class="col-md-5">
+              <img src="img/team-3.png" alt="" class="img-fluid">
+            </div>
+            <div class="col-md-7">
+              <div class="card-body">
+                <h5 class="card-title text-white">Hasan</h5>
+                <p class="card-text text-light">
+                  This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer
+                </p>
+                <p class="card-text">
+                  <small class="text-light"> Lead Engineer</small>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--question section-->
+  <section class="about section-padding" id="question" style="margin-top: 40">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-5 col-md-12 col-12 mt-md-3">
+          <div class="about-text">
+            <h2>Sıkça Sorulan Sorular</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio illum 
+              recusandae excepturi quo accusantium molestiae pariatur corrupti amet 
+              et reprehenderit dignissimos molestias ea ipsum, sit, 
+              inventore suscipit mollitia architecto sed. Quaerat soluta consequuntur
+              voluptatibus non doloremque et, quos sunt quas!
+            </p>
+            <a href="#" class="btn text-white bg-dark px-3">Daha Fazlası İçin</a>
+          </div>
+        </div>
+        <!---accordion-->
+        <div class="accordion col-lg-7 mt-5" id="accordionExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                ******************
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                ********************
+              </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                ******************
+              </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--footer-->
+  <footer class="bg-dark" style="margin-top: 80px">
+    <div class="container py-5">
+      <div class="row">
+        <div class="col-lg-6">
+          <h5 class="text-light">Bizim Hakkımızda</h5>
+          <p class="text-light">Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+            Enim repellat illo amet quae reiciendis molestias?
+          </p>
+          <p class="text-light"><i class="bi bi-crosshair2"></i>İzmir</p>
+          <p class="text-light"><i class="bi bi-telephone"></i></i>+444 4 444</p>
+          <p class="text-light"><i class="bi bi-envelope"></i></i>info@gmail.com</p>
+        </div>
+        <div class="col-lg-3">
+          <h5 class="text-light">Hızlı Bağlantılar</h5>
+          <ul class="list-unstyled">
+            <li>
+              <a href="#" class="text-decoration-none text-light">Anasayfa</a>
+            </li>
+            <li>
+              <a href="#Popular" class="text-decoration-none text-light">Popüler</a>
+            </li>
+            <li>
+              <a href="#Services" class="text-decoration-none text-light">Hizmetlerimiz</a>
+            </li>
+            <li>
+              <a href="#Blog" class="text-decoration-none text-light">Blog</a>
+            </li>
+            <li>
+              <a href="#question" class="text-decoration-none text-light">Sorular</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-3 ">
+          <h5 class="text-light">Bize Ulaşmak İçin</h5>
+          <ul class="list-unstyled">
+            <li>
+              <a href="" class="d-flex align-items-center text-decoration-none gap-2 text-light"><i class="bi bi-facebook"></i> Facebook</a>
+            </li>
+            <li>
+              <a href="" class="d-flex align-items-center text-decoration-none gap-2 text-light"><i class="bi bi-twitter"></i> Twitter</a>
+            </li>
+            <li>
+              <a href="" class="d-flex align-items-center text-decoration-none gap-2 text-light"><i class="bi bi-instagram"></i> Instagram</a>
+            </li>
+            <li>
+              <a href="" class="d-flex align-items-center text-decoration-none gap-2 text-light"><i class="bi bi-linkedin"></i> Lınkedin</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <hr />
+      <div class="row">
+        <div class="col-lg-12">
+          <p class="text-center text-light">
+            Copyright © 2024 
+            <a href="#" class="text-secondary text-decoration-none">
+              Real Estate</a>
+              Tüm Hakları Saklıdır.
+            </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!--bs-js-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"
+    integrity="sha512-X/YkDZyjTf4wyc2Vy16YGCPHwAY8rZJY+POgokZjQB2mhIRFJCckEGc6YyX9eNsPfn0PzThEuNs+uaomE5CO6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+
+</html>
